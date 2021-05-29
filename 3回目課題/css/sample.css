@@ -1,0 +1,383 @@
+
+html, body{
+  height:50%;
+  margin:0;
+  padding:0;
+}
+/* ヘッダーの設定をする */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  height: 40px;
+  padding-top:4px; 
+  background-color: skyblue;
+
+}
+header h1{
+  font-size:40px;
+ 
+}
+h1 {
+  font-size: 100%;
+}
+/* googlemapとチャットの作成 ----------------------------*/
+.top-wrapper{
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+/* googlemap部分の作成*/
+.top-wrapper1{
+  width: 70%;
+  height: 600px;
+}
+
+/* チャット部分の作成*/
+.outro{
+  display:flex;
+  width:100%;
+}
+
+#output1{
+  width:100%;
+  display:flex;
+  flex-direction:column-reverse;
+}
+#output1 p{
+
+  margin:5px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 22px;
+}
+#output1 img{
+  width:30px;
+  height:30px;
+}
+#output2{
+
+  margin:10px;
+  width:100%;
+  display:flex;
+  flex-direction:column-reverse;
+}
+#output2 p{
+
+  margin:5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: skyblue;
+  font-size: 22px;
+}
+#output2 img{
+  width:1px;
+  height:1px;
+}
+.out1{
+  
+  width:48%; 
+}
+.out2{
+
+  width:48%; 
+}
+.top-wrapper2{
+  width: 30%;
+ 
+  height: 600px;
+}
+.chat-header{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+
+  background-color: skyblue;
+}
+.chat-header h2{
+  font-size:30px;
+  width: 100%;
+  padding-top: 10px;
+  color: white;
+}
+.chat-middle{
+  height: 450px;
+  width: 100%;
+  background-image:url(../imgs/1.jpeg);
+}
+.chat-bottom{
+  height: 100px;
+  width: 100%;
+}
+.chat-bottom1{
+  display: flex;
+}
+#name{
+  display:flex;
+  width:96%;
+  margin:0px auto;
+  margin-top:3px;
+}
+#username{
+  padding: 10px 25px;
+}
+#usernam{
+  padding: 10px 25px;
+  margin-left: 6px;
+}
+#send{
+  padding: 7px 35px;
+
+}
+.chat-bottom2{
+  display: flex;
+  width:96%;
+  margin:2px auto;
+}
+#jibun{
+  padding: 10px 85px;
+  margin-left: 6px;
+}
+#aite{
+  padding: 10px 84px;
+  
+
+}
+/* デモンストレーションボタンの設定 ----------------------------*/
+.bottom-wrapper{
+  width: 100%;
+  height: 300px;
+}
+.bottom{
+  
+  display: flex;
+  height: 300px;
+  width: 100%;
+  
+}
+/* 歩数、消費カロリー等の詳細部分の作成 */
+/* 歩数の設定 */
+.exercise{
+  height: 284px;
+  width: 50%;
+  display: flex;
+  background-color: lightgray;
+  padding-top: 20px;
+}
+.walk{
+  height: 300px;
+  width: 50%;
+}
+.walk-target{
+  height: 150px;
+ 
+  width: 100%;
+}
+.walk-target1{
+  height: 100px;
+
+}
+.walk-subtarget1{
+  color: blue;
+  margin-left: 80px;
+  font-size: 100px;
+  font-family:"Let's go Digital";
+}
+.walk-subtarget2{
+
+  height:50px;
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 25px;
+  
+}
+/* 目標までの残りの歩数を表示する */
+.walk-zan1{
+  height: 100px;
+
+}
+.walk-subzan1{
+
+  margin-left: 80px;
+  font-size: 100px;
+  width:50%;
+  font-family:"Let's go Digital";
+}
+.walk-subzan2{
+
+  height:50px;
+  margin-left: 55px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+/* 歩いた歩数の設定 */
+.active{
+  height: 300px;
+  
+  width: 50%;
+}
+.walk-zan{
+  height: 150px;
+
+  width: 100%;
+}
+.walk-target1{
+
+  display: flex;
+}
+.walk-target h2{
+  text-align: center;
+}
+.walk-zan1{
+
+  display: flex;
+}
+.walk-zan h2{
+  text-align: center;
+}
+
+.sport{
+  height:45%;
+  display: flex;
+}
+.sport-item{
+  width: 50%;
+  
+  padding-left: 100px;
+  
+}
+.sport-number1{
+  font-size: 100px;
+  width: 50%;
+  margin-left:40px;
+  margin-right:10px;
+  height:78%;
+  text-align: center;
+  font-family:"Let's go Digital";
+  
+}
+
+.sport-number2{
+  font-size: 25px;
+  height:30%;
+  margin-top:55px;
+}
+.sport-number3{
+  width: 50%;
+  margin:30px;
+  margin-left:60px;
+  font-size: 25px;
+}
+.sport-cal1{
+  font-size: 100px;
+  width: 40%;
+  margin-left:50px;
+  margin-right:10px;
+  height:78%;
+  text-align: center;
+  font-family:"Let's go Digital";
+}
+
+.sport-cal2{
+  font-size: 25px;
+  height:30%;
+  margin-left: 15px;
+  margin-top:55px;
+}
+
+
+/* 画像表示の設定 */
+.others{
+  
+  display:flex;
+  width: 50%;
+  padding-top: 10px;
+
+}
+/* 現在の画像表示の設定 */
+.other1{
+
+  height: 300px;
+  width: 50%;
+}
+.other1 h2{
+  text-align: center;
+}
+.likeimg1{
+
+  margin:5px;
+  height: 200px;
+}
+.item-box1{
+ 
+  width:20%;
+  margin:0 auto;
+  height: 60px;
+}
+#buke{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* 現在の画像表示の設定 */
+.other2{
+
+  height: 300px;
+  width: 50%;
+}
+.other2 h2{
+  text-align: center;
+}
+.likeimg2{
+
+  margin:5px;
+  height: 200px;
+}
+.item-box2{
+
+  width:20%;
+  margin:0 auto;
+  height: 60px;
+}
+#caram{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* フッターの設定 */
+footer {
+  background-color:skyblue;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: white;
+  height:30px;
+
+}
+.last{
+  font-size: 20px;
+  margin:auto;
+  margin-top:4px;
+  border: 1px solid skyblue;
+}
+/* mapの設定 */
+#map{
+  height:100%;
+}
+ /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+
+
+      

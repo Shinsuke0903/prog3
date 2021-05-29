@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chatアプリ</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sample.css">
+  </head>
+  <body>
+    <!-- ヘッダーを書いていく -->
+    <header>
+      <h1>食GO!!(デモ)</h1>
+    </header>
+    <main>
+    <!-- googlemapとチャット部分の作成 -->
+    <div class="top-wrapper">
+      <!-- googlemapを埋め込む -->
+      <div class="top-wrapper1">
+        <div id="map"></div>    
+      </div>
+      <!-- チャットを作成 --------->
+      <div class="top-wrapper2"> 
+        <!-- チャットの題名を作成 -->
+        <div class="chat-header">
+          <h2>chat</h2>
+        </div>
+        <!-- チャットの中身を作成 -->
+        <div class="chat-middle">
+          <input type="time" name="example" id="view_time">
+          <div class="outro">
+            <!-- 保存されたデータが表示される箇所 -->
+            <div class="out1">
+              <div id="output1"></div>
+            </div>
+            <div class="out2">
+              <div id="output2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- 送信テキスト、送信ボタンを作成 -->
+        <div class="chat-bottom">
+          <div class="chat-bottom1">   
+            <!-- コンテンツ表示画面 -->
+            <div id="name">
+              <!-- テキスト書きこむ場所 -->
+              <input type="text" id="username">
+              <input type="text" id="usernam">
+            </div>
+          </div>
+          <div class="chat-bottom2">
+            <div>
+              <button id="aite">相手</button>
+            </div>
+            <div>
+              <button id="jibun">自分</button>
+              
+            </div>
+          </div>
+          <!--/ コンテンツ表示画面 -->
+        </div>  
+      </div>
+  </div>
+  <!-- デモンストレーションボタンの作成 -->
+  <div class="bottom-wrapper">
+    <!-- 歩数、消費カロリー等の詳細 -->
+    <div class="bottom">
+      <div class="exercise">
+        <!-- 歩数の作成 -->
+        <div class="walk">
+          <div class="walk-target">
+            <h2>目標歩数</h2>
+            <div class="walk-target1">
+              <p class="walk-subtarget1">5000</p>
+              <p class="walk-subtarget2">歩</p>
+            </div>
+          </div>
+          <div class="walk-zan">
+            <h2>目標までの歩数</h2>
+            <div class="walk-zan1">
+              <p class="walk-subzan1" id="walksubzan"></p>
+              <p class="walk-subzan2">歩</p>
+            </div>
+          </div>
+        </div>
+        <div class="active">
+          <p class="sport-item" id="sportimes">現在の歩数</p>
+          <div class="sport">
+            <p class="sport-number1" id="sportnumber1"></p>
+            <p class="sport-number2">歩</p>
+          </div>
+          <p class="sport-item">消費カロリー</p>
+          <div class="sport">
+            <p class="sport-cal1" id="sportcal1"></p>
+            <p class="sport-cal2">kcal</p>
+          </div>
+        </div>
+      </div>
+        <!-- 画像表示の設定-->
+      <div class="others">
+        <div class="other1">
+          <h2>お気に入りの画像を見つけよう</h2>
+          <div class="likeimg1" id="likeimg1">
+            <img src="imgs/21.jpeg" alt="" id="buke">
+          </div>
+          <div class="item-box1" id="itembox1">
+            <!-- いいね機能 -->
+          </div>
+        </div>
+        <div class="other2">
+          <h2>これまでのlike画像を表示</h2>
+          <div class="likeimg2" id="likeimg2">
+            <img src="imgs/22.jpeg" alt="" id="caram">
+          </div>
+          <div class="item-box2" id="itembox2">
+            <!-- いいね機能 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ <!-- フッターの作成 -->
+<footer>
+  <p class="last">Metalife</p>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+
+
+
+
+
+
+<!--
+
+        
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/action.js"></script>
+ JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- JQuery -->
+  <!--** 以下Firebase **-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- 6.6.1に該当する箇所はfirebaseのバージョンですので更新されるたびに随時変わります🤗    8.6.2に変える必要がある -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script src="js/syokugo.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiykstM12qRGnih06AT40g0zxWhv3K8Nc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+   
+  </body>
+</html>
+
