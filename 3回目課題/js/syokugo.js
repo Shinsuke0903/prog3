@@ -3,7 +3,7 @@
 // firesbaseのサイトのコード---------------------------
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyADj2QGm3iGDaMioO8ZX3NZN5_kTc0xsVA",
+    apiKey: "",
     authDomain: "dev20chat-c8419.firebaseapp.com",
     databaseURL: "https://dev20chat-c8419-default-rtdb.firebaseio.com/",  //仕様が変わった
     projectId: "dev20chat-c8419",
@@ -40,10 +40,7 @@ console.log(genzaijikoku);
   // 入力したデータをfirebaseに送るーーーーーーーーーーーーーーーーーーーーーーーーー
   let d= 0;
   const img = ["6.jpeg"]
-  $(".icon").on("click", function(){
-    console.log(this);
-    d = $(this).attr("data-img")
-  })
+ 
   // 画像をランダムに一つ選ぶ
 // let randomimgs = [
 //   'imgs/10.jpeg',
@@ -85,8 +82,6 @@ $("#likeimg2").on("click", function () {
 $("#likeimg2").on("dblclick", function () {
   document.getElementById("itembox2").innerHTML = "";
 });
-
-
 
 
   // 送信ボタンをクリックされたら次の処理をする------------
@@ -201,7 +196,6 @@ $("#likeimg2").on("dblclick", function () {
 //     setInterval('time()',1000);
 
 // デモンストレーションボタンを押したら発火ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-
 
 // 地図上に表示<デモンストレーション部分>ーーーーーーーーーーーーーーーーーーーーーーーーーーー
 var map;
